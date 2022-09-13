@@ -108,6 +108,13 @@
 
 
 /* Service */
+.Services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Services h3{
+    text-align: center;
+}
 .ser-box{
     padding: 25px;
     text-align: center;
@@ -117,14 +124,57 @@
     box-shadow: 0px 0px 9px -4px;
     position: relative;
 }
+.ser-box h4{
+    padding-top: 35px;
+}
 .ser-box i{
     position: absolute;
     top: -50px;
-    left: 158px;
+    left: 170px;
     color: white;
     background-color: orangered;
     font-size: 50px;
-    padding: 25px;
+    padding: 20px;
     border: solid 1px;
     border-radius: inherit;
+}
+
+
+
+/* Experience */
+.myExp{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+  
+    margin-bottom: 50px;
+    background-color: rgb(239, 239, 239);
+}
+.exp-head{
+    padding-top: 30px;
+    text-align:center;
+    padding-bottom: 50px;
+}
+.exp-sec{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.exp-sidehd span{
+    padding: 5px;
+    background-color: orangered;
+    border-radius: 50px;
+    color: white;
+}
+.exp-sideph span{
+      color: rgb(150, 147, 143);
+}
+
+
+/* portfolio */
+.port-head{
+    text-align: center;
+}
+.port-crd{
+    width: 100%;
 }
