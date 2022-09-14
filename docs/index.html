@@ -9,55 +9,59 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icofont.css">
-<style>
-    .banner{
-        display: flex;
-        margin: 0;
-        position: relative;
-    }
-    .img-outer{
-    position: absolute;
-    right: 0;
-    width: 50%;
-    display: flex;
-    padding: 20px;
-    border: solid 15px;
-    border-color: orangered;
-    border-top-left-radius: 250px;
-    border-bottom-left-radius: 250px;
-    border-right: 0;
-    
-    }
-    .img-inner{
-       
-        overflow: hidden;
-        border: solid 10px;
-        border-top-left-radius: 170px;
-        border-bottom-left-radius: 170px;
-        border-top-right-radius: 170px;
-        
-    }
-    .img-inner img{
-        width: 300px;
-    }
-  
-    .banner-social-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 15px;
-        gap: 10px;
-        padding-right: 15px;
-    }
-    .banner-social-links a i{
-        background-color: lightgray;
-        padding: 5px;
-    }
-    .banner-social-links a{
-        margin-top: 10pxpx;
-    }
+    <style>
+        .banner {
+            display: flex;
+            margin: 0;
+            position: relative;
+        }
 
-</style>
+        .img-outer {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            display: flex;
+            padding: 20px;
+            border: solid 15px;
+            border-color: orangered;
+            border-top-left-radius: 250px;
+            border-bottom-left-radius: 250px;
+            border-right: 0;
+
+        }
+
+        .img-inner {
+
+            overflow: hidden;
+            border: solid 10px;
+            border-top-left-radius: 170px;
+            border-bottom-left-radius: 170px;
+            border-top-right-radius: 170px;
+
+        }
+
+        .img-inner img {
+            width: 300px;
+        }
+
+        .banner-social-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 15px;
+            gap: 10px;
+            padding-right: 15px;
+        }
+
+        .banner-social-links a i {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        .banner-social-links a {
+            margin-top: 10pxpx;
+        }
+    </style>
 
 </head>
 
@@ -119,15 +123,15 @@
                             Contact Me
                         </button>
                     </a>
-                </div>   
+                </div>
             </div>
         </div>
-        
+
         <div class="img-outer">
             <div class="img-inner">
                 <img src="../docs/img/images/home-banner.png" alt="">
             </div>
-            
+
         </div>
         <div class="banner-social-links">
             <a href="#"><i class="icofont-facebook"></i></a>
@@ -212,7 +216,6 @@
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
-
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -221,7 +224,6 @@
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
-
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -230,7 +232,6 @@
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
-
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -429,32 +430,106 @@
             <div class="test-head">
                 <h2>TESTIMONIAL</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-
+            <div class="review">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            id="slide-2" class="active" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card review-card">
+                                        <div class="review-card-title">
+                                            <div class="head-icon">
+                                                <img src="./img/images/team-1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div>
+                                            <h4>Matt Bardon</h4>
+                                            <span>Designer</span>
+                                        </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><i class="ion-quote" id="test-ico1"></i> Enim nisi quem export duis
+                                                labore cillum quae
+                                                magna enim sint quorum nulla quem veniam duis minim tempor labore
+                                                quem
+                                                eram duis noster aute amet eram fore quis sint minim. <i
+                                                    class="ion-quote" id="test-ico"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card review-card">
+                                        <div class="review-card-title">
+                                            <div class="head-icon">
+                                                <img src="./img/images/team-1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <h4>Matt Bardon</h4>
+                                            <span>Designer</span>
+                                            
+                                        </div>
+                                        <div class="card-body">
+                                            <p><i class="ion-quote" id="test-ico1"></i> Enim nisi quem export duis
+                                                labore cillum quae
+                                                magna enim sint quorum nulla quem veniam duis minim tempor labore
+                                                quem
+                                                eram duis noster aute amet eram fore quis sint minim. <i
+                                                    class="ion-quote" id="test-ico"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
-
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card review-card">
+                                        <div class="review-card-title">
+                                            <div class="head-icon">
+                                                <img src="./img/images/team-1.jpg" alt="">
+                                            </div>
+                                            <h4>Matt Bardon</h4>
+                                            <span>Designer</span>
+                                            
+                                        </div>
+                                        <div class="card-body">
+                                            <p><i class="ion-quote" id="test-ico1"></i> Enim nisi quem export duis
+                                                labore cillum quae
+                                                magna enim sint quorum nulla quem veniam duis minim tempor labore
+                                                quem
+                                                eram duis noster aute amet eram fore quis sint minim. <i
+                                                    class="ion-quote" id="test-ico"></i> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card review-card">
+                                        <div class="review-card-title">
+                                            <div class="head-icon">
+                                                <img src="./img/images/team-1.jpg" alt="">
+                                            </div>
+                                            <h4>Matt Bardon</h4>
+                                            <span>Designer</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><i class="ion-quote" id="test-ico1"></i> Enim nisi quem export duis
+                                                labore cillum quae
+                                                magna enim sint quorum nulla quem veniam duis minim tempor labore
+                                                quem
+                                                eram duis noster aute amet eram fore quis sint minim. <i
+                                                    class="ion-quote" id="test-ico"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,7 +609,7 @@
                         <h5>Get in Touch</h5>
                         <div class="form">
                             <div class="Row d-flex justify-content-space-between">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label"></label>
                                         <input type="email" class="form-control" id="exampleFormControlInput1"
@@ -571,6 +646,20 @@
         </div>
     </section>
     <!--Contact end-->
+    <!--Footer Start-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <iframe class="mb-4 mb-lg-0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                        frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen=""></iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer End-->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

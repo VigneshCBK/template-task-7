@@ -1,28 +1,32 @@
 /* navbar */
-.navbar-brand{
+.navbar-brand {
     font-weight: bolder;
 }
-.img-border{
+
+.img-border {
     border: solid 5px;
-    border-radius: 50% 50% 0 50% ;
+    border-radius: 50% 50% 0 50%;
 }
 
 
 /* Banner */
-.banner{
+.banner {
     padding-bottom: 70px;
-    position:relative;
+    position: relative;
 }
-.banner-1{
+
+.banner-1 {
     position: absolute;
     padding-top: 150px;
     position: relative;
 }
-.banner-1 h2{
+
+.banner-1 h2 {
     font-size: 50px;
     font-weight: bold;
 }
-.banner-1 h2::before{
+
+.banner-1 h2::before {
     content: "";
     width: 80px;
     height: 3px;
@@ -31,28 +35,32 @@
     background-color: orangered;
     position: absolute;
 }
-.banner-1 h3{
+
+.banner-1 h3 {
     font-weight: 500;
 }
-.banner-1 p{
+
+.banner-1 p {
     color: rgb(118, 116, 116);
 }
-.banner-1 a button{
+
+.banner-1 a button {
     color: aliceblue;
     font-weight: bold;
     background-color: orangered;
-    padding:4px 15px 7px 15px;
+    padding: 4px 15px 7px 15px;
     border-radius: 5px;
     border: none;
 }
 
 /* About */
-.about{
-    
+.about {
+
     background-color: whitesmoke;
     position: relative;
 }
-.about::after{
+
+.about::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -62,7 +70,8 @@
     background-color: orangered;
     position: absolute;
 }
-.about::before{
+
+.about::before {
     content: "";
     width: 25px;
     height: 3px;
@@ -72,23 +81,27 @@
     background-color: orangered;
     position: absolute;
 }
-.about img{
+
+.about img {
     width: 90%;
 
 }
-.abt-head{
+
+.abt-head {
     margin-bottom: 70px;
     padding-top: 30px;
     text-align: center;
 }
-.abt-sd2{
+
+.abt-sd2 {
     padding-top: 50px;
 }
 
-.abt-sd2 p{
- color: rgb(118, 116, 116);
+.abt-sd2 p {
+    color: rgb(118, 116, 116);
 }
-.abt-sd2 a{
+
+.abt-sd2 a {
     flex-grow: 1;
     margin: 0 3px;
     text-align: center;
@@ -100,16 +113,19 @@
     border: solid 1px;
     border-color: rgb(196, 196, 196);
 }
-.abt-des{
- margin-top: 20px;
- margin-bottom: 20px;
+
+.abt-des {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.abt-des h5{
+
+.abt-des h5 {
     border-left: 3px solid orange;
     padding: 0px 8px;
     margin: 20px 0 20px 0;
 }
-.abt-des h5::before{
+
+.abt-des h5::before {
     width: 80px;
     height: 3px;
     display: block;
@@ -117,22 +133,26 @@
     background-color: orangered;
     position: absolute;
 }
-.abt-models{
+
+.abt-models {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.abt-wrk{
+
+.abt-wrk {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.abt-wrk p{
+
+.abt-wrk p {
     padding: 10px;
     background-color: orangered;
     border-radius: 50%;
     color: white;
 }
-.abt-wrk span{
+
+.abt-wrk span {
     padding-top: 10px;
     color: rgb(92, 91, 89);
 }
@@ -141,12 +161,13 @@
 
 
 /* Service */
-.Services{
+.Services {
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
 }
-.Services::after{
+
+.Services::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -156,8 +177,9 @@
     background-color: orangered;
     position: absolute;
 }
-.Services::before{
-    content: "";
+
+.Services::before {
+    content: "";   
     width: 25px;
     height: 3px;
     display: block;
@@ -166,10 +188,12 @@
     background-color: orangered;
     position: absolute;
 }
-.Services h3{
+
+.Services h3 {
     text-align: center;
 }
-.ser-box{
+
+.ser-box {
     padding: 25px;
     text-align: center;
     border: solid 1px;
@@ -178,39 +202,64 @@
     box-shadow: 0px 0px 9px -4px;
     position: relative;
 }
-.ser-box h4{
+
+.ser-box h4 {
     padding-top: 35px;
 }
-.ser-box i{
-    position: absolute;
-    top: -50px;
-    left: 170px;
-    color: white;
-    background-color: orangered;
-    font-size: 50px;
-    padding: 20px;
-    border: solid 1px;
-    border-radius: inherit;
+
+.ser-box i {
+    width: 100px;
+    height: 57.735px;
+    background: red;
+    position: relative;
 }
+
+.ser-box i::before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid red;
+}
+
+.ser-box i::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid red;
+}
+
+
 
 
 
 /* Experience */
-.myExp{
+.myExp {
     margin-top: 50px;
     padding-bottom: 50px;
     padding-top: 100px;
-  
+
     margin-bottom: 50px;
     background-color: rgb(239, 239, 239);
 }
-.exp-head{
+
+.exp-head {
     padding-top: 30px;
-    text-align:center;
+    text-align: center;
     padding-bottom: 50px;
     position: relative;
 }
-.exp-head::after{
+
+.exp-head::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -220,7 +269,8 @@
     background-color: orangered;
     position: absolute;
 }
-.exp-head::before{
+
+.exp-head::before {
     content: "";
     width: 25px;
     height: 3px;
@@ -230,32 +280,37 @@
     background-color: orangered;
     position: absolute;
 }
-.exp-sec{
+
+.exp-sec {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
 }
-.exp-sidehd span{
+
+.exp-sidehd span {
     padding: 5px;
     background-color: orangered;
     border-radius: 50px;
     color: white;
 }
-.exp-sideph span{
-      color: rgb(150, 147, 143);
+
+.exp-sideph span {
+    color: rgb(150, 147, 143);
 }
 
 
 /* portfolio */
-.port-head{
+.port-head {
     text-align: center;
     padding-bottom: 50px;
-    
+
 }
-.portfolio{
+
+.portfolio {
     position: relative;
 }
-.portfolio::after{
+
+.portfolio::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -265,7 +320,8 @@
     background-color: orangered;
     position: absolute;
 }
-.portfolio::before{
+
+.portfolio::before {
     content: "";
     width: 25px;
     height: 3px;
@@ -275,22 +331,29 @@
     background-color: orangered;
     position: absolute;
 }
-.port-crd{
+
+.port-crd {
     width: 100%;
 }
 
-
+/* Testimonial */
+.head-icon{
+    display: flex;
+    width: 100px;
+}
 
 /* latest blog */
-.late-head{
+.late-head {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.latest{
+
+.latest {
     position: relative;
 }
-.latest::after{
+
+.latest::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -300,7 +363,8 @@
     background-color: orangered;
     position: absolute;
 }
-.latest::before{
+
+.latest::before {
     content: "";
     width: 25px;
     height: 3px;
@@ -310,23 +374,26 @@
     background-color: orangered;
     position: absolute;
 }
-.late-card a{
+
+.late-card a {
     color: orangered;
 
 }
 
 
 /* Contact */
-.contact{
+.contact {
     background-color: rgb(245, 245, 245);
-position: relative;
+    position: relative;
 }
-.cont-head{
+
+.cont-head {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
 }
-.cont-head::after{
+
+.cont-head::after {
     content: "";
     width: 25px;
     height: 3px;
@@ -336,7 +403,8 @@ position: relative;
     background-color: orangered;
     position: absolute;
 }
-.cont-head::before{
+
+.cont-head::before {
     content: "";
     width: 25px;
     height: 3px;
@@ -346,16 +414,19 @@ position: relative;
     background-color: orangered;
     position: absolute;
 }
-.con-details{
+
+.con-details {
     height: 100%;
     padding: 20px;
     background-color: white;
 }
-.cont-details2{
+
+.cont-details2 {
     padding: 20px;
     background-color: white;
 }
-.cont-button{
+
+.cont-button {
     background-color: orangered;
     padding: 4px 13px;
     color: white;
