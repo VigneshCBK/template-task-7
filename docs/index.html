@@ -9,7 +9,55 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icofont.css">
+<style>
+    .banner{
+        display: flex;
+        margin: 0;
+        position: relative;
+    }
+    .img-outer{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    border: solid 15px;
+    border-color: orangered;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    border-right: 0;
+    
+    }
+    .img-inner{
+       
+        overflow: hidden;
+        border: solid 10px;
+        border-top-left-radius: 170px;
+        border-bottom-left-radius: 170px;
+        border-top-right-radius: 170px;
+        
+    }
+    .img-inner img{
+        width: 300px;
+    }
+  
+    .banner-social-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        gap: 10px;
+        padding-right: 15px;
+    }
+    .banner-social-links a i{
+        background-color: lightgray;
+        padding: 5px;
+    }
+    .banner-social-links a{
+        margin-top: 10pxpx;
+    }
 
+</style>
 
 </head>
 
@@ -56,11 +104,11 @@
         </nav>
     </section>
     <!--Nav End-->
-    <!--Banner Strat-->
+    <!--Banner Start-->
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-mg-12 col-lg-5 banner-1">
+                <div class="col-sm-12 col-mg-12 col-lg-6 banner-1">
                     <h5>Hi There, I'm</h5>
                     <h2>Ramki Ravi</h2>
                     <h3>Freelance Desinger</h3>
@@ -71,11 +119,21 @@
                             Contact Me
                         </button>
                     </a>
-                </div>
-                <div class="col-sm-12 col-mg-12 col-lg-7">
-                    <img src="../docs/img/images/home-banner.png" alt="">
-                </div>
+                </div>   
             </div>
+        </div>
+        
+        <div class="img-outer">
+            <div class="img-inner">
+                <img src="../docs/img/images/home-banner.png" alt="">
+            </div>
+            
+        </div>
+        <div class="banner-social-links">
+            <a href="#"><i class="icofont-facebook"></i></a>
+            <a href="#"><i class="icofont-whatsapp"></i></a>
+            <a href="#"><i class="icofont-instagram"></i></a>
+            <a href="#"><i class="icofont-linkedin"></i></a>
         </div>
     </section>
     <!--About-->
@@ -159,7 +217,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="ser-box">
-                        <i class="icofont-laptop-alt"></i>
+                        <i class="icofont-stock-mobile"></i>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
@@ -168,7 +226,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="ser-box">
-                        <i class="icofont-laptop-alt"></i>
+                        <i class="icofont-halloween-pumpkin"></i>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
@@ -177,7 +235,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="ser-box">
-                        <i class="icofont-laptop-alt"></i>
+                        <i class="icofont-sand-clock"></i>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
@@ -186,7 +244,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="ser-box">
-                        <i class="icofont-laptop-alt"></i>
+                        <i class="icofont-anchor"></i>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
@@ -195,7 +253,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="ser-box">
-                        <i class="icofont-laptop-alt"></i>
+                        <i class="icofont-bill"></i>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
@@ -368,8 +426,37 @@
     <!--Testimonial start-->
     <section class="testimonial">
         <div class="container">
+            <div class="test-head">
+                <h2>TESTIMONIAL</h2>
+            </div>
             <div class="row">
-                <div class=""></div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -384,37 +471,106 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="./img/images/blog-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                          <a href="#">Read More</a>
+                        <div class="card-body late-card">
+                            <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt</p>
+                            <a href="#">Read More</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="./img/images/blog-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                          <a href="#">Read More</a>
+                        <div class="card-body late-card">
+                            <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt</p>
+                            <a href="#">Read More</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="./img/images/blog-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                          <a href="#">Read More</a>
+                        <div class="card-body late-card">
+                            <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt</p>
+                            <a href="#">Read More</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--Latest blog end-->
+    <!--Contact start-->
+    <section class="contact">
+        <div class="container">
+            <div class="cont-head">
+                <h2>CONTACT ME</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-4">
+                    <div class="con-details">
+                        <div>
+                            <h5>Email</h5>
+                            <p>info@domainian.com <br>
+                                info@domainian.com</p>
+                        </div>
+                        <div>
+                            <h5>Visit My Studio</h5>
+                            <p>warne park streetperrine <br>FL 33157 New York City.</p>
+                        </div>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>9578970211</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-8">
+                    <div class="cont-details2">
+                        <h5>Get in Touch</h5>
+                        <div class="form">
+                            <div class="Row d-flex justify-content-space-between">
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label"></label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Name*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label"></label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="Email*">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email*">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Your Message" rows="3"></textarea>
+                            </div>
+                            <a href="#">
+                                <button class="cont-button">
+                                    Contact Me
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact end-->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

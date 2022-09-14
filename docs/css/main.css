@@ -2,11 +2,19 @@
 .navbar-brand{
     font-weight: bolder;
 }
-
+.img-border{
+    border: solid 5px;
+    border-radius: 50% 50% 0 50% ;
+}
 
 
 /* Banner */
+.banner{
+    padding-bottom: 70px;
+    position:relative;
+}
 .banner-1{
+    position: absolute;
     padding-top: 150px;
     position: relative;
 }
@@ -40,9 +48,29 @@
 
 /* About */
 .about{
-    margin-top: 30px;
+    
     background-color: whitesmoke;
     position: relative;
+}
+.about::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 50px;
+    right: 682px;
+    background-color: orangered;
+    position: absolute;
+}
+.about::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 50px;
+    right: 809px;
+    background-color: orangered;
+    position: absolute;
 }
 .about img{
     width: 90%;
@@ -61,10 +89,13 @@
  color: rgb(118, 116, 116);
 }
 .abt-sd2 a{
-    margin-bottom: 20px;
+    flex-grow: 1;
+    margin: 0 3px;
+    text-align: center;
+    margin-bottom: 10px;
     background-color: white;
     text-decoration: none;
-    padding: 2px 17px 4px 17px;;
+    padding: 2px 17px 4px 17px;
     border-radius: 10px;
     border: solid 1px;
     border-color: rgb(196, 196, 196);
@@ -74,6 +105,8 @@
  margin-bottom: 20px;
 }
 .abt-des h5{
+    border-left: 3px solid orange;
+    padding: 0px 8px;
     margin: 20px 0 20px 0;
 }
 .abt-des h5::before{
@@ -111,6 +144,27 @@
 .Services{
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+}
+.Services::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 18px;
+    right: 850px;
+    background-color: orangered;
+    position: absolute;
+}
+.Services::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 18px;
+    right: 646px;
+    background-color: orangered;
+    position: absolute;
 }
 .Services h3{
     text-align: center;
@@ -154,6 +208,27 @@
     padding-top: 30px;
     text-align:center;
     padding-bottom: 50px;
+    position: relative;
+}
+.exp-head::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 50px;
+    right: 501px;
+    background-color: orangered;
+    position: absolute;
+}
+.exp-head::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 50px;
+    right: 771px;
+    background-color: orangered;
+    position: absolute;
 }
 .exp-sec{
     background-color: white;
@@ -174,7 +249,116 @@
 /* portfolio */
 .port-head{
     text-align: center;
+    padding-bottom: 50px;
+    
+}
+.portfolio{
+    position: relative;
+}
+.portfolio::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 20px;
+    right: 620px;
+    background-color: orangered;
+    position: absolute;
+}
+.portfolio::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 20px;
+    right: 875px;
+    background-color: orangered;
+    position: absolute;
 }
 .port-crd{
     width: 100%;
+}
+
+
+
+/* latest blog */
+.late-head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.latest{
+    position: relative;
+}
+.latest::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 69px;
+    right: 636px;
+    background-color: orangered;
+    position: absolute;
+}
+.latest::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 69px;
+    right: 860px;
+    background-color: orangered;
+    position: absolute;
+}
+.late-card a{
+    color: orangered;
+
+}
+
+
+/* Contact */
+.contact{
+    background-color: rgb(245, 245, 245);
+position: relative;
+}
+.cont-head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.cont-head::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 69px;
+    right: 636px;
+    background-color: orangered;
+    position: absolute;
+}
+.cont-head::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    top: 69px;
+    right: 860px;
+    background-color: orangered;
+    position: absolute;
+}
+.con-details{
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+}
+.cont-details2{
+    padding: 20px;
+    background-color: white;
+}
+.cont-button{
+    background-color: orangered;
+    padding: 4px 13px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
 }
