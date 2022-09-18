@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* navbar */
-.navbar-brand {
-    font-weight: bolder;
+.nav-head a{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .img-border {
@@ -17,7 +22,7 @@
 
 .banner-1 {
     position: absolute;
-    padding-top: 150px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -31,7 +36,8 @@
     width: 80px;
     height: 3px;
     display: block;
-    top: 242px;
+    top: 190px;
+    bottom: 0;
     background-color: orangered;
     position: absolute;
 }
@@ -52,32 +58,39 @@
     border-radius: 5px;
     border: none;
 }
-
+.banner-social-links a{
+    text-decoration: none;
+    color: black;
+}
 /* About */
 .about {
-
+    margin-top: 150px;
     background-color: whitesmoke;
-    position: relative;
 }
-
-.about::after {
+.abt-head h2{
+    position: relative;
+    
+}
+.abt-head h2::after {
     content: "";
     width: 25px;
     height: 3px;
     display: block;
-    top: 50px;
-    right: 682px;
+    top: 18px;
+    bottom: 0;
+    right: 568px;
     background-color: orangered;
     position: absolute;
 }
 
-.about::before {
+.abt-head h2::before {
     content: "";
     width: 25px;
     height: 3px;
     display: block;
-    top: 50px;
-    right: 809px;
+    top: 19px;
+    /* bottom: -22px; */
+    right: 700px;
     background-color: orangered;
     position: absolute;
 }
@@ -118,11 +131,14 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.abt-des a{
+    color: rgb(118, 118, 118);
+}
 
 .abt-des h5 {
-    border-left: 3px solid orange;
-    padding: 0px 8px;
-    margin: 20px 0 20px 0;
+    border-left: 3px solid orangered;
+    padding: 0px 6px;
+    margin: 15px 0 15px 0;
 }
 
 .abt-des h5::before {
@@ -195,6 +211,7 @@
 
 .ser-box {
     padding: 25px;
+    align-items: center;
     text-align: center;
     border: solid 1px;
     margin-top: 65px;
@@ -206,15 +223,25 @@
 .ser-box h4 {
     padding-top: 35px;
 }
+.ser-icons-box i{
+font-size: 40px;
+color: white;
+}
 
-.ser-box i {
+.ser-icons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 57.735px;
     background: red;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
 }
 
-.ser-box i::before {
+.ser-icons-box::before {
     content: "";
     position: absolute;
     top: -28.8675px;
@@ -226,7 +253,7 @@
     border-bottom: 28.8675px solid red;
 }
 
-.ser-box i::after {
+.ser-icons-box::after {
     content: "";
     position: absolute;
     bottom: -28.8675px;
@@ -265,7 +292,7 @@
     height: 3px;
     display: block;
     top: 50px;
-    right: 501px;
+    right: calc(50%-100px);
     background-color: orangered;
     position: absolute;
 }
@@ -300,47 +327,129 @@
 
 
 /* portfolio */
+.portfolio{
+    
+}
 .port-head {
     text-align: center;
     padding-bottom: 50px;
 
 }
 
-.portfolio {
+.port-head h2{
     position: relative;
 }
 
-.portfolio::after {
+.port-head h2::after {
     content: "";
-    width: 25px;
-    height: 3px;
-    display: block;
-    top: 20px;
-    right: 620px;
-    background-color: orangered;
     position: absolute;
+    display: block;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 35px;
+    height: 3px;
+    background: #ea4020;
 }
 
-.portfolio::before {
+.port-head h2::before {
     content: "";
-    width: 25px;
-    height: 3px;
-    display: block;
-    top: 20px;
-    right: 875px;
-    background-color: orangered;
     position: absolute;
+    display: block;
+    bottom: 0;
+    top: 0;
+    left: 500px;
+    margin: auto;
+    width: 35px;
+    height: 3px;
+    background: #ea4020;
 }
 
 .port-crd {
     width: 100%;
 }
+.port-content a{
+    text-decoration: none;
+   padding:2px 10px 5px 11px;;
+   border:solid  1px;
+   border-radius: 20px;
+   border-color: rgb(189, 188, 188);
+   color: lightslategray;
+
+}
+.port-inner-img{
+    position: relative;
+}
+.port-ico-in{
+    position: absolute;
+    top: 131px;
+    left: 168px;
+    bottom: 0;
+}
+.port-ico-in i{
+    color: white;
+    padding: 10px;
+    background-color: red;
+}
 
 /* Testimonial */
-.head-icon{
-    display: flex;
-    width: 100px;
+.testimoinal{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: rgb(226, 226, 226);
 }
+.testimonial-head{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.test-btn{
+    width: 10px;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 7px;
+    padding: 1px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    position: absolute;
+    top: 32px;
+    background: blueviolet;
+    width: 18px;
+    height: 0;
+    border-radius: 50%;
+}
+.testimonial-head h2{
+    text-align: center;
+
+}
+.head-icon{
+    margin-top: 10px;
+    
+    padding-left: 20px;
+}
+.head-icon img{
+    float: right;
+    
+    display: flex;
+    width: 80px;
+    border-radius: 50%;
+}
+.review-card{
+    display: flex;
+}
+.text-content{
+   padding-top: 10px;
+}
+
 
 /* latest blog */
 .late-head {
@@ -351,6 +460,7 @@
 
 .latest {
     position: relative;
+    padding-bottom: 40px;
 }
 
 .latest::after {
@@ -418,10 +528,17 @@
 .con-details {
     height: 100%;
     padding: 20px;
+    box-shadow:  0px 0px 5px 0px;
     background-color: white;
+}
+.con-details h5{
+    border-left: 3px solid orangered;
+    padding: 0px 6px;
+    margin: 15px 0 15px 0;
 }
 
 .cont-details2 {
+    box-shadow:  0px 0px 5px 0px;
     padding: 20px;
     background-color: white;
 }
@@ -432,4 +549,47 @@
     color: white;
     border: 0;
     border-radius: 5px;
+}
+
+.contact-social-links a{
+text-decoration: none;
+}
+.contact-social-links a i{
+    font-size: 20px;
+    color: lightslategray;
+    letter-spacing: 10px;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.outer-map{
+    box-shadow:  0px 0px 5px 0px;
+
+    margin-bottom: 40px;
+    background-color: white;
+}
+.inner-map{
+    padding: 10px;
+}
+
+
+
+/* copy Rights */
+.copy-social-links a{
+ text-decoration: none;
+ color: rgb(151, 150, 150);
+}
+.copy-social-links a i{
+    font-size: 20px;
+}
+.copy-social-links{
+   word-spacing: 10px;
+}
+.copy{
+    float: right;
+    color: rgb(151, 150, 150);
 }
