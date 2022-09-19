@@ -1,0 +1,36 @@
+@media (max-width: 992px) {
+    .img-outer{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 48%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: solid 15px;
+        border-color: rgb(6, 6, 6);
+        border-top-left-radius: 180px;
+        border-bottom-left-radius: 180px;
+        border-right: 0;
+        transform: translateY(-50%);   
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .img-outer{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 48%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: solid 15px;
+        border-color: orangered;
+        border-top-left-radius: 160px;
+        border-bottom-left-radius: 160px;
+        border-right: 0;
+        transform: translateY(-50%);   
+    }
+  }

@@ -16,7 +16,9 @@
 
 /* Banner */
 .banner {
-    padding-bottom: 70px;
+    padding-top: 70px;
+    display: flex;
+    margin: 0;
     position: relative;
 }
 
@@ -96,7 +98,8 @@
 }
 
 .about img {
-    width: 90%;
+    align-items: center;
+    width: 70%;
 
 }
 
@@ -234,7 +237,7 @@ color: white;
     align-items: center;
     width: 100px;
     height: 57.735px;
-    background: red;
+    background: orangered;
     position: absolute;
     left: 50%;
     top: -30px;
@@ -250,7 +253,7 @@ color: white;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 28.8675px solid red;
+    border-bottom: 28.8675px solid orangered;
 }
 
 .ser-icons-box::after {
@@ -262,7 +265,7 @@ color: white;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 28.8675px solid red;
+    border-top: 28.8675px solid orangered;
 }
 
 
@@ -378,7 +381,16 @@ color: white;
 
 }
 .port-inner-img{
+    
     position: relative;
+    height: 100%;
+    background-image: url(./img/images/portfolio-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.port-inner-img img{
+    height: 200px;
 }
 .port-ico-in{
     position: absolute;

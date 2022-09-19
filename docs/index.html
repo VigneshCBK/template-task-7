@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icofont.css">
@@ -20,29 +21,33 @@
         .img-outer {
             position: absolute;
             right: 0;
-            width: 50%;
-            height: 100%;
+            top: 50%;
+            width: 48%;
+            height: 400px;
             display: flex;
+            align-items: center;
             padding: 20px;
             border: solid 15px;
             border-color: orangered;
-            border-top-left-radius: 250px;
-            border-bottom-left-radius: 250px;
+            border-top-left-radius: 220px;
+            border-bottom-left-radius: 220px;
             border-right: 0;
+            transform: translateY(-50%);
 
         }
 
         .img-inner {
             overflow: hidden;
             border: solid 10px;
-            border-top-left-radius: 280px;
-            border-bottom-left-radius: 280px;
-            border-top-right-radius: 240px;
+            border-top-left-radius: 180px;
+            border-bottom-left-radius: 180px;
+            border-top-right-radius: 180px;
 
         }
 
         .img-inner img {
-            width: 392px;
+            width: 320px;
+            display: block;
         }
 
         .banner-social-links {
@@ -214,7 +219,7 @@
         <div class="container">
             <h3>MY SERVICES</h3>
             <div class="row gx-4">
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-stock-mobile"></i>
@@ -224,7 +229,7 @@
                             modern websites.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-laptop-alt"></i>
@@ -234,17 +239,17 @@
                             modern websites.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-dart"></i>
-                         </div>
+                        </div>
                         <h4>Uniq Design</h4>
                         <p>I design and develop services for customers of all sizes, specializing in creating stylish,
                             modern websites.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-shield-alt"></i>
@@ -255,7 +260,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-swirl"></i>
@@ -266,7 +271,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
                         <div class="ser-icons-box">
                             <i class="icofont-unity-hand"></i>
@@ -372,8 +377,7 @@
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-01.jpg" class="img-fluid rounded-start"
-                                            alt="...">
+                                        <img src="./img/images/portfolio-01.jpg" class="img-fluid" alt="...">
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -397,8 +401,7 @@
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-02.jpg" class="img-fluid rounded-start"
-                                            alt="...">
+                                        <img src="./img/images/portfolio-02.jpg" class="img-fluid" alt="...">
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -422,8 +425,7 @@
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-03.jpg" class="img-fluid rounded-start"
-                                            alt="...">
+                                        <img src="./img/images/portfolio-03.jpg" class="img-fluid" alt="...">
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -447,8 +449,7 @@
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-04.jpg" class="img-fluid rounded-start"
-                                            alt="...">
+                                        <img src="./img/images/portfolio-04.jpg" class="img-fluid" alt="...">
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -594,14 +595,13 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
-                        
-                            <div class="latest-inner-img">
-                                <img src="./img/images/portfolio-01.jpg" class="img-fluid rounded-start"
-                                    alt="...">
-                                <div class="late-ico-in">
-                                    <i class="#">Jan 1</i>
-                                </div>
+
+                        <div class="latest-inner-img">
+                            <img src="./img/images/portfolio-01.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="late-ico-in">
+                                <i class="#">Jan 1</i>
                             </div>
+                        </div>
 
                         <div class="card-body late-card">
                             <h5 class="card-title">Prevent 75% of visitors from google analytics</h5>
@@ -614,8 +614,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="latest-inner-img">
-                            <img src="./img/images/portfolio-02.jpg" class="img-fluid rounded-start"
-                                alt="...">
+                            <img src="./img/images/portfolio-02.jpg" class="img-fluid rounded-start" alt="...">
                             <div class="late-ico-in">
                                 <i class="#">Jan 1</i>
                             </div>
@@ -631,8 +630,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="latest-inner-img">
-                            <img src="./img/images/portfolio-03.jpg" class="img-fluid rounded-start"
-                                alt="...">
+                            <img src="./img/images/portfolio-03.jpg" class="img-fluid rounded-start" alt="...">
                             <div class="late-ico-in">
                                 <i class="#">Jan 1</i>
                             </div>
@@ -684,7 +682,7 @@
                         <h5>Get in Touch</h5>
 
                         <div class="row d-flex justify-content-space-between">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-lg-6  col-sm-12">
                                 <div class="mb">
                                     <label for="exampleFormControlInput1" class="form-label"></label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
