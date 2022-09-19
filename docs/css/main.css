@@ -593,3 +593,15 @@ text-decoration: none;
     float: right;
     color: rgb(151, 150, 150);
 }
+.latest-inner-img img{
+    position: relative;
+}
+.late-ico-in{
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    top: 9px;
+    right: 10px;
+}
+
