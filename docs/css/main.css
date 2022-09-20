@@ -31,6 +31,9 @@
 .banner-1 h2 {
     font-size: 50px;
     font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .banner-1 h2::before {
@@ -38,8 +41,7 @@
     width: 80px;
     height: 3px;
     display: block;
-    top: 190px;
-    bottom: 0;
+    bottom: 0px;
     background-color: orangered;
     position: absolute;
 }
@@ -64,6 +66,67 @@
     text-decoration: none;
     color: black;
 }
+
+.banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    margin: 0;
+    position: relative;
+}
+
+.img-outer {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 48%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: solid 15px;
+    border-color: orangered;
+    border-top-left-radius: 220px;
+    border-bottom-left-radius: 220px;
+    border-right: 0;
+    transform: translateY(-50%);
+
+}
+
+.img-inner {
+    overflow: hidden;
+    border: solid 10px;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    border-top-right-radius: 180px;
+
+}
+
+.img-inner img {
+    width: 320px;
+    display: block;
+}
+
+.banner-social-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 15px;
+    right: 10px;
+}
+
+.banner-social-links a i {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.banner-social-links a {
+    margin-top: 20px;
+}
 /* About */
 .about {
     margin-top: 150px;
@@ -73,26 +136,21 @@
     position: relative;
     
 }
-.abt-head h2::after {
+.abt-head h2::before{
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 18px;
-    bottom: 0;
-    right: 568px;
+    top: 0px;
+    margin: 19px -30px;
     background-color: orangered;
     position: absolute;
 }
-
-.abt-head h2::before {
+.abt-head h2::after{
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 19px;
-    /* bottom: -22px; */
-    right: 700px;
+    top: 0px;
+    margin: 19px 5px;
     background-color: orangered;
     position: absolute;
 }
@@ -183,32 +241,32 @@
 .Services {
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
+    
+}
+.ser-head h3{
     position: relative;
 }
-
-.Services::after {
+.ser-head h3::before{
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 18px;
-    right: 850px;
+    top: 0px;
+    margin: 19px -30px;
     background-color: orangered;
     position: absolute;
 }
-
-.Services::before {
-    content: "";   
+.ser-head h3::after{
+    content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 18px;
-    right: 646px;
+    top: 0px;
+    margin: 19px 5px;
     background-color: orangered;
     position: absolute;
 }
 
-.Services h3 {
+.services h3 {
     text-align: center;
 }
 
@@ -286,27 +344,26 @@ color: white;
     padding-top: 30px;
     text-align: center;
     padding-bottom: 50px;
+
+}
+.exp-head h2{
     position: relative;
 }
-
-.exp-head::after {
+.exp-head  h2::before{
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 50px;
-    right: calc(50%-100px);
+    top: 0px;
+    margin: 19px -30px;
     background-color: orangered;
     position: absolute;
 }
-
-.exp-head::before {
+.exp-head  h2::after{
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 50px;
-    right: 771px;
+    top: 0px;
+    margin: 19px 5px;
     background-color: orangered;
     position: absolute;
 }
@@ -323,8 +380,12 @@ color: white;
     border-radius: 50px;
     color: white;
 }
+.exp-sideph{
+    padding-top: 10px;
+}
 
 .exp-sideph span {
+    padding-top: 10px;
     color: rgb(150, 147, 143);
 }
 
@@ -343,36 +404,30 @@ color: white;
     position: relative;
 }
 
-.port-head h2::after {
+.port-head h2::before{
     content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    width: 35px;
+    width: 25px;
     height: 3px;
-    background: #ea4020;
+    top: 0px;
+    margin: 19px -30px;
+    background-color: orangered;
+    position: absolute;
 }
-
-.port-head h2::before {
+.port-head h2::after{
     content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    top: 0;
-    left: 500px;
-    margin: auto;
-    width: 35px;
+    width: 25px;
     height: 3px;
-    background: #ea4020;
+    top: 0px;
+    margin: 19px 5px;
+    background-color: orangered;
+    position: absolute;
 }
 
 .port-crd {
     width: 100%;
 }
 .port-content a{
-    text-decoration: none;
+   text-decoration: none;
    padding:2px 10px 5px 11px;;
    border:solid  1px;
    border-radius: 20px;
@@ -380,11 +435,35 @@ color: white;
    color: lightslategray;
 
 }
-.port-inner-img{
-    
+
+#port-back-1{
+    background-image: url(../img/images/portfolio-01.jpg);
     position: relative;
     height: 100%;
-    background-image: url(./img/images/portfolio-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#port-back-2{
+    background-image: url(../img/images/portfolio-02.jpg);
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#port-back-3{
+    background-image: url(../img/images/portfolio-03.jpg);
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#port-back-4{
+    background-image: url(../img/images/portfolio-04.jpg);
+    position: relative;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -392,14 +471,12 @@ color: white;
 .port-inner-img img{
     height: 200px;
 }
-.port-ico-in{
-    position: absolute;
-    top: 131px;
-    left: 168px;
-    bottom: 0;
-}
+
 .port-ico-in i{
     color: white;
+    position: absolute;
+    top: 80px;
+    right: 10px;
     padding: 10px;
     background-color: red;
 }
@@ -413,6 +490,27 @@ color: white;
 .testimonial-head{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.testimonial-head h2{
+    position: relative;
+}
+.testimonial-head h2::before{
+    content: "";
+    width: 25px;
+    height: 3px;
+    top: 0px;
+    margin: 19px -30px;
+    background-color: orangered;
+    position: absolute;
+}
+.testimonial-head h2::after{
+    content: "";
+    width: 25px;
+    height: 3px;
+    top: 0px;
+    margin: 19px 5px;
+    background-color: orangered;
+    position: absolute;
 }
 .test-btn{
     width: 10px;
@@ -449,8 +547,6 @@ color: white;
     padding-left: 20px;
 }
 .head-icon img{
-    float: right;
-    
     display: flex;
     width: 80px;
     border-radius: 50%;
@@ -469,30 +565,30 @@ color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+.late-head h2{
+   position: relative;
+}
 .latest {
-    position: relative;
+   
     padding-bottom: 40px;
 }
 
-.latest::after {
+.late-head h2::after {
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 69px;
-    right: 636px;
+    top: 0px;
+    margin: 19px 5px;
     background-color: orangered;
     position: absolute;
 }
 
-.latest::before {
+.late-head h2::before {
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 69px;
-    right: 860px;
+    top: 0px;
+    margin: 19px -30px;
     background-color: orangered;
     position: absolute;
 }
@@ -506,33 +602,46 @@ color: white;
 /* Contact */
 .contact {
     background-color: rgb(245, 245, 245);
-    position: relative;
+    
 }
+.cont-head h1{
+ position: relative;
 
+}
+.cont-head h1::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ea4020;
+    display: inline-block;
+
+}
 .cont-head {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
+    
 }
-
-.cont-head::after {
+.cont-head h2{
+    position: relative;
+}
+.cont-head h2::after {
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 69px;
-    right: 636px;
+    top: 0px;
+    margin: 19px 5px;
     background-color: orangered;
     position: absolute;
 }
 
-.cont-head::before {
+.cont-head h2::before {
     content: "";
     width: 25px;
     height: 3px;
-    display: block;
-    top: 69px;
-    right: 860px;
+    top: 0px;
+    margin: 19px -30px;
     background-color: orangered;
     position: absolute;
 }

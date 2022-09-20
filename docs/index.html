@@ -10,66 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/icofont.css">
-    <style>
-        .banner {
-            padding-top: 70px;
-            display: flex;
-            margin: 0;
-            position: relative;
-        }
-
-        .img-outer {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            width: 48%;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            border: solid 15px;
-            border-color: orangered;
-            border-top-left-radius: 220px;
-            border-bottom-left-radius: 220px;
-            border-right: 0;
-            transform: translateY(-50%);
-
-        }
-
-        .img-inner {
-            overflow: hidden;
-            border: solid 10px;
-            border-top-left-radius: 180px;
-            border-bottom-left-radius: 180px;
-            border-top-right-radius: 180px;
-
-        }
-
-        .img-inner img {
-            width: 320px;
-            display: block;
-        }
-
-        .banner-social-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 15px;
-            gap: 10px;
-            padding-top: 20px;
-            padding-right: 15px;
-        }
-
-        .banner-social-links a i {
-            background-color: lightgray;
-            padding: 5px;
-        }
-
-        .banner-social-links a {
-            margin-top: 20px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -108,9 +48,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li>
 
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -121,7 +59,7 @@
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-mg-12 col-lg-6 banner-1">
+                <div class="col-sm-7 col-mg-12 col-lg-6 banner-1">
                     <h5>Hi There, I'm</h5>
                     <h2>VIGNESH</h2>
                     <h3>Freelance Desinger</h3>
@@ -217,7 +155,9 @@
     <!--Services Start-->
     <section class="Services">
         <div class="container">
-            <h3>MY SERVICES</h3>
+            <div class="ser-head">
+                <h3>MY SERVICES</h3>
+            </div>
             <div class="row gx-4">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="ser-box">
@@ -370,14 +310,14 @@
             <div class="port-head">
                 <h2>MY PORTFOLIO</h2>
             </div>
-            <div class="row">
+            <div class="row gy-4 justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="port-crd">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-01.jpg" class="img-fluid" alt="...">
+                                    <div class="port-inner-img" id="port-back-1">
+                                        <!-- <img src="./img/images/portfolio-01.jpg" id="port-img-1" class="img-fluid" alt="..."> -->
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -400,8 +340,8 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-02.jpg" class="img-fluid" alt="...">
+                                    <div class="port-inner-img" id="port-back-2">
+                                        <!-- <img src="" class="img-fluid" alt="..."> -->
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -424,8 +364,8 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-03.jpg" class="img-fluid" alt="...">
+                                    <div class="port-inner-img" id="port-back-3">
+                                        <!-- <img src="./img/images/portfolio-03.jpg" class="img-fluid" alt="..."> -->
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -448,8 +388,8 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <div class="port-inner-img">
-                                        <img src="./img/images/portfolio-04.jpg" class="img-fluid" alt="...">
+                                    <div class="port-inner-img" id="port-back-4">
+                                        <!-- <img src="./img/images/portfolio-04.jpg" class="img-fluid" alt="..."> -->
                                         <div class="port-ico-in">
                                             <i class="icofont-plus"></i>
                                         </div>
@@ -592,7 +532,7 @@
             <div class="late-head">
                 <h2>LATEST BLOG</h2>
             </div>
-            <div class="row">
+            <div class="row gy-4 justify-content-center">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
 
@@ -651,6 +591,7 @@
     <section class="contact">
         <div class="container">
             <div class="cont-head">
+
                 <h2>CONTACT ME</h2>
             </div>
             <div class="row">
@@ -755,7 +696,8 @@
         </div>
     </section>
     <!--Copy Rights End-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>
