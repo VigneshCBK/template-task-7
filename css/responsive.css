@@ -31,6 +31,12 @@
     border-right: 0;
     transform: translateY(-50%);
 }
+.banner-social-links{
+  background: #fff;
+  box-shadow: 0px 1px 5px #ccc;
+  border-radius: 5px;
+  right: 0px;
+}
 }
 @media(min-width: 320px) and (max-width:576px){
   .banner .banner-1 {
@@ -57,6 +63,7 @@
     width: 320px;
     display: block;
 }
+
 .banner-social-links {
   position: absolute;
   display: flex;
@@ -68,5 +75,11 @@
   right: 5px;
   top: 9%;
   transform: translateY(0%);
+}
+.banner-social-links{
+  background: #fff;
+  box-shadow: 0px 1px 5px #ccc;
+  border-radius: 5px;
+  right: 0px;
 }
 }
