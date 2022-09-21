@@ -306,25 +306,30 @@ color: white;
 .ser-icons-box::before {
     content: "";
     position: absolute;
-    top: -28.8675px;
+    top: -26.8675px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 28.8675px solid orangered;
+    /* border-top-left-radius: 0; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .ser-icons-box::after {
     content: "";
     position: absolute;
-    bottom: -28.8675px;
+    bottom: -26.8675px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 28.8675px solid orangered;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 8px;
 }
 
 
