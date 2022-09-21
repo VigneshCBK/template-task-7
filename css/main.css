@@ -292,6 +292,7 @@ color: white;
 
 .ser-icons-box{
     display: flex;
+    border-radius: 6px;
     justify-content: center;
     align-items: center;
     width: 100px;
@@ -655,7 +656,7 @@ color: white;
 .con-details {
     height: 100%;
     padding: 20px;
-    box-shadow:  0px 0px 5px 0px;
+    box-shadow:  0px 0px 5px#ccc;
     background-color: white;
 }
 .con-details h5{
@@ -665,7 +666,7 @@ color: white;
 }
 
 .cont-details2 {
-    box-shadow:  0px 0px 5px 0px;
+    box-shadow:  0px 0px 5px #ccc;
     padding: 20px;
     background-color: white;
 }
@@ -694,7 +695,7 @@ text-decoration: none;
     margin-bottom: 20px;
 }
 .outer-map{
-    box-shadow:  0px 0px 5px 0px;
+    box-shadow:  0px 0px 5px #ccc;
 
     margin-bottom: 40px;
     background-color: white;
